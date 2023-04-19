@@ -12,3 +12,8 @@ document.write(C)
 var Family = " The Butts ", Dad = "Rob ", Mom = "Meg ", Son = "Zac ", Daughter = "Sam "; // This is showing everyone in my family
 document.write(Son )  // When i specify "Son", it writes my name (Zac)
 document.write(2+4 );
+function myFunction() {
+    var sentence = "I am learning";
+    sentence += " a lot from this book";
+    document.getElementById("Concatenate").innerHTML = sentence;
+}
