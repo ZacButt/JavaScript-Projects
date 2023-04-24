@@ -1,11 +1,12 @@
 var Instruments= ["Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"];
 var content="";
 var Y;
+
 function for_Loop() {
     for (Y= 0; Y < Instruments.length; Y++) {
-    Content += Instruments[Y] + "<br>";
+    content += Instruments[Y] + "<br>";
     }
-    document.getElementById("List_of_Instruments").innerHTML= Content;
+    document.getElementById("List_of_Instruments").innerHTML= content;
 }
 
 function array_Function() {
