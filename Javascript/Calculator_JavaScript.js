@@ -1,7 +1,7 @@
 //Creates an object to keep track of values.
 const Calculator= {
     //This will display 0 on the calculator screen.
-    Display_Value: '0'
+    Display_Value: '0',
     //This will hold the first operand for any expressions, we set it to null for now.
     First_Operand: null,
     //This checks whether or not the second operand has been inputted by the user.
@@ -85,7 +85,7 @@ function Calculator_Reset() {
 function Update_Display() {
     //Makes use of the calculator-screen class to target the
     //input tag in the HTML document
-    const display = document.querySelector('calculator-screen');
+    const display = document.querySelector('.calculator-screen');
     display.value = Calculator.Display_Value;
 }
 
