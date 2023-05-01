@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="./Final_project.css">
+	<meta charset="utf-8">
+    <h1 style="font-size:8vw;">Colorado 14ers</h1>
+    <hr> <!--Horizontal Rule Tag-->
+    <p style="font-size:2vw;">The Amazing Outdoors</p>
+    </head>
+    <body>
+      <h1>Find your Peak!</h1>
+
+      <p class="link"><a href="https://www.14ers.com/">Visit 14ers.com!</a></p>
+
+      <form name="myForm" action="./Final_Project/Final_Project.js" onsubmit="return validateForm()" method="post">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Phone Number:</label><br>
+            <input type="text" id="lname" name="lname">
+            <input type="submit" value="Submit">
+          </form>
+
+
+<!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<div class= "form"></div>
+<div class="single-featured-image-header">
+  <img src="./mountains.jpg"></div>
+
+  <div id="slideshow">
+    <div>
+      <img src="./mountains_2.jpg" height="240px" width="240px">
+    </div>
+    <div>
+      <img src="./mountains_3.jpg" height="240px" width="240px">
+    </div>
+    <div>
+      There are so many amazing hikes in Colorado. Check out a couple of these 14ers!!
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="./Final_Project.js"></script>
+    </body>
+</html>
